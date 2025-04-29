@@ -1,0 +1,218 @@
+@font-face {
+    font-family: nunito;
+    src: url(/assets/nunito.ttf);
+}
+
+html {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+body, * {
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    font-family: nunito;
+    color: white;
+}
+
+#top {
+    margin-top: 0%;
+}
+
+/* HEADER */
+#logos {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#logos .container{
+    height: 10vh;
+    width: 94vw;
+    background-image: linear-gradient(black 85%, transparent);
+    margin: auto;
+    display: flex;
+    position: relative;
+    color: white;
+}
+
+#logos .home-button {
+    height: inherit;
+}
+
+#logos .container a {
+    margin: auto;
+    font-family: nunito;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#scroll-to-top {
+    height: 5vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 2vw;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+/* CALL-TO-ACTION */
+#call-to-action .container{
+    height: 90vh;
+    width: 94vw;
+    max-width: 100%;
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 0;
+}
+
+.gradient {
+    background-image:
+        linear-gradient(transparent, black 95%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#homepage {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+#call-to-action .text {
+    top: 35%;
+    left: 50%;
+    position: absolute;
+    width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 0;
+}
+
+.search input[type=text]  {
+    width: 30vw;
+    border: 1;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(42, 42, 42);
+    color: white;
+    border-radius: 2rem;
+    padding: .7rem;
+}
+
+.search input[type=text]:focus  {
+    outline-color: rgb(255, 255, 255);
+}
+
+.enter {
+    font-family: nunito;
+}
+
+.search {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* FAQ */
+#faq {
+    position: relative;
+    z-index: 0;
+}
+
+#faq .container{
+    position: relative;
+    width: 70vw;
+    height: 320vh;
+    margin: 10vh auto 0 auto;
+}
+
+details summary {
+    background-color: rgb(42, 42, 42);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: solid rgb(107, 107, 107) 1px;
+    transition: 0.5s;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    display: flex;
+}
+
+details[open] summary {
+    background-color: rgb(42, 42, 42);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: solid rgb(107, 107, 107) 1px;
+    transition: 0.5s;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    display: flex;
+}
+
+details[open] summary .up-button {
+    height: 1.5rem;
+    margin: auto 0 auto auto;
+    rotate: x 180deg;
+    transition: 0.5s;
+}
+
+details summary .up-button {
+    height: 1.5rem;
+    margin: auto 0 auto auto;
+    transition: 0.5s; 
+}
+
+details .answer {
+    background-color: rgb(42, 42, 42);
+    border-radius: 1rem;
+    padding: 0.2rem;
+    border: solid rgb(107, 107, 107) 1px;
+    margin-bottom: 0.5rem;
+}
+
+details .answer p {
+    margin: 1rem;
+}
+
+details summary:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+details summary:active {
+    border-color: white;
+}
+
+details > summary::webkit-details-marker {
+    display: none;
+}
+
+details > summary {
+    list-style: none;
+}
