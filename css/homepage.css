@@ -1,6 +1,6 @@
 @font-face {
     font-family: nunito;
-    src: url('../assets/nunito.ttf');
+    src: url(/assets/nunito.ttf);
 }
 
 html {
@@ -50,8 +50,6 @@ body, * {
     color: white;
     text-decoration: none;
 }
-
-
 
 #scroll-to-top {
     height: 5vh;
@@ -110,21 +108,26 @@ body, * {
 
 .search input[type=text]  {
     width: 30vw;
-    border: 1;
     border-color: black;
     border-style: solid;
     background-color: rgb(42, 42, 42);
     color: white;
-    border-radius: 2rem;
-    padding: .7rem;
+    border-radius: 3vw;
+    height: 3vh;
+    padding: 1vh;
 }
 
 .search input[type=text]:focus  {
     outline-color: rgb(255, 255, 255);
 }
 
-.enter {
+.movieName {
     font-family: nunito;
+}
+
+#searchButton {
+    height: 5vh;
+    width: 5vh;
 }
 
 .search {
@@ -135,8 +138,34 @@ body, * {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+
 }
+
+#results h3 {
+    font-size: 1rem;
+    position: relative;
+    background-color: rgb(42, 42, 42);
+    width: 32vw;
+    margin: 0;
+    position: relative;
+    transition: 0.5s;
+    border-color: black;
+    border-style: solid;
+
+}
+
+#results {
+    position: absolute;
+    width: 32vw;
+
+}
+
+#results h3:hover {
+    cursor: pointer;
+    background-color: rgb(107, 107, 107);
+    transition: 0.5s;
+}
+
 
 
 /* FAQ */
