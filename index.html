@@ -7,7 +7,6 @@
             <link rel="stylesheet" href="css/homepage.css">
         </head>
         <body>
-            <script src="fetch.js"></script>
             <div id="top"></div>
             <section id="logos">
                 <div class="container">
@@ -25,17 +24,19 @@
                         <h1>need something new to watch?</h1>
                         <h3>we can help with that.</h3>
                         <div class="search">
-                            <input class="enter" type="text" placeholder="get movie night started.">
-                            <h1>CCC</h1>
+                            <div>
+                            <input id="movieName" type="text" placeholder="get movie night started.">
+                            <div id="results"></div>
+                            </div>
+                            <button id="searchButton">hello</button>
                         </div>
-                        
                     </div>
                 </div>
             </section>
             <section id="faq">
                 <div class="container">        
                     <div class="text">
-                        <h1 style="font-size: 2rem">frequently asked questions</h1>
+                        <h1>frequently asked questions</h1>
                         <div class="card">
                             <details>
                                 <summary>
@@ -64,6 +65,7 @@
                                     <p>we make the recommendations based on a plethora of factors, such as 
                                         genre, director, publishing studio, reviews, and more.
                                     </p>
+                                    <p>we use the <a href="https://www.themoviedb.org/">TMDB</a> API!</p>
                                 </div>
                             </details>
                             <details>
@@ -92,7 +94,7 @@
                 </div>
             </section>
             
-
+            <script src="fetch.js"></script>
 
             <script>
                 const scrollToTopButton = document.querySelector("#scroll-to-top");
