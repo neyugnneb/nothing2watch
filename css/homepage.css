@@ -145,7 +145,6 @@ body, * {
     font-size: 1rem;
     position: relative;
     background-color: rgb(42, 42, 42);
-    width: 32vw;
     margin: 0;
     position: relative;
     transition: 0.5s;
@@ -156,7 +155,7 @@ body, * {
 
 #results {
     position: absolute;
-    width: 32vw;
+    width: 31.25vw;
 
 }
 
