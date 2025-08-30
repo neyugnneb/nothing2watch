@@ -64,7 +64,7 @@ body, * {
 
 /* CALL-TO-ACTION */
 #call-to-action .container{
-    height: 90vh;
+    height: 110vh;
     width: 94vw;
     max-width: 100%;
     position: relative;
@@ -106,32 +106,27 @@ body, * {
     z-index: 0;
 }
 
-.search input[type=text]  {
-    width: 30vw;
-    border-color: black;
-    border-style: solid;
+#searchButton {
     background-color: rgb(42, 42, 42);
-    color: white;
-    border-radius: 3vw;
-    height: 3vh;
-    padding: 1vh;
+    border-radius: 1rem;
+    padding: 6px;
+    font-size: 1rem;
+    border-color: rgb(107, 107, 107);
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.5s;
 }
 
-.search input[type=text]:focus  {
-    outline-color: rgb(255, 255, 255);
+#searchButton:hover {
+    background-color: rgb(94, 94, 94);
+    cursor: pointer;
 }
 
 .movieName {
     font-family: nunito;
 }
 
-#searchButton {
-    height: 5vh;
-    width: 5vh;
-}
-
 .search {
-    width: 60vw;
     margin-left: auto;
     margin-right: auto;
     height: 5vh;
@@ -140,32 +135,6 @@ body, * {
     align-items: center;
 
 }
-
-#results h3 {
-    font-size: 1rem;
-    position: relative;
-    background-color: rgb(42, 42, 42);
-    margin: 0;
-    position: relative;
-    transition: 0.5s;
-    border-color: black;
-    border-style: solid;
-
-}
-
-#results {
-    position: absolute;
-    width: 31.25vw;
-
-}
-
-#results h3:hover {
-    cursor: pointer;
-    background-color: rgb(107, 107, 107);
-    transition: 0.5s;
-}
-
-
 
 /* FAQ */
 #faq {
