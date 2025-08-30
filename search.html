@@ -3,10 +3,33 @@
         <head>
             <meta charset="UTF-8">
             <meta content="width=device-width,initial-scale=1" name="viewport">
-            <title>test2</title>
-            <link rel="stylesheet">
+            <title>nothing2watch</title>
+            <link rel="stylesheet" href="/css/search.css">
         </head>
         <body>
-            <h1></h1>
+            <section id="nav">
+                <div id="header">
+                    <input id="movieName" type="text" placeholder="search for more movies.">
+                    <div id="searchBox">                    
+                        <img id="searchButton" src="/assets/search.svg" alt="search">
+                    </div>
+                </div>
+                <div id="results"></div>
+            </section>
+            <section class="cards">
+                <h1 class="headers">your list</h1>
+                <section class="display" id="list1">
+                    <div id="first" class="add movieDisplayed">
+                        <h3 id="remaining">8</h3>
+                    </div>
+                </section>
+            </section>
+            <section class="cards">
+                <h1 class="headers">movies we recommend</h1>
+                <section id="prerecs" class="display">
+                </section>
+            </section>
+            
+            <script src="purpose.js"></script>
         </body>
     </html>
