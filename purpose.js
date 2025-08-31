@@ -238,7 +238,7 @@ function findMovie(movie) {
             let secSec = document.createElement("section");
             secSec.className = "display";
             
-            for (let j = 0; j < 8; j++) {
+            for (let j = 0; j < 9; j++) {
 
               let movieDiv = document.createElement("div");
               let moviePoster = document.createElement("img");
@@ -272,4 +272,5 @@ function findMovie(movie) {
 
         }
     
+
   
